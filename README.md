@@ -1,5 +1,4 @@
 # Go2021
-Repositorio dedicado al seminario de Golang
 Crear una funcion que dada una cadena con un formato determinado genere una instancia de una estructura con los valores de los campos correspondientes al formato de la cadena
 ## Consideraciones:
 - Agregar test de unidad
