@@ -6,25 +6,24 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestGetStructure(t *testing.T) {
+func TestType(t *testing.T) {
 	s := "TX04ACBD"
-	expected := "TX 4 ACBD"
+	type_ := "TX"
 	actual, _ := model.GetStructure(s)
-	assert.Equal(t, expected, actual, "Las cadenas de texto resultantes son diferentes")
+	assert.Equal(t, type_, actual.Type, "Las cadenas de texto resultantes son diferentes")
 }
 
-/*func TestverifyLetter(t *testing.T) {
+func TestLength(t *testing.T) {
 	s := "TX04ACBD"
-	expected := true
-	actual, _ := model.verifyLetter(s)
-	assert.Equal(t, actual, expected, "Las cadenas de texto resultantes son diferentes")
+	length := 4
+	actual, _ := model.GetStructure(s)
+	assert.Equal(t, length, actual.Length, "La/s cadena/s de numero/s resultantes son diferentes")
 }
 
-func verifyNumber(t *testing.T) {
-
+func TestValue(t *testing.T) {
+	s := "TX04ACBD"
+	value := "ACBD"
+	actual, _ := model.GetStructure(s)
+	assert.Equal(t, value, actual.Value, "Las cadenas de texto resultantes son diferentes")
 }
 
-func verifyLength(t *testing.T) {
-
-}
-*/
