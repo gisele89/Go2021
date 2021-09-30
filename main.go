@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	result, err := model.GetStructure("TX04ABCD")
+	result, err := model.GetStructure("TX04ACBD")
 	if err == nil {
 		fmt.Println(result)
 	} else {
